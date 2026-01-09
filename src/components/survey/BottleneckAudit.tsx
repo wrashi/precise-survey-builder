@@ -6,7 +6,7 @@ import { QUESTIONS, calculateScores, CategoryScore } from '@/lib/surveyData';
 
 type Screen = 'welcome' | 'questions' | 'results';
 
-export function BottleneckAudit() {
+export default function BottleneckAudit() {
   const [currentScreen, setCurrentScreen] = useState<Screen>('welcome');
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [responses, setResponses] = useState<Record<number, number>>({});
