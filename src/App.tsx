@@ -1,3 +1,14 @@
+<<<<<<< HEAD
+import { Routes, Route } from 'react-router-dom';
+import BottleneckAudit from '@/components/survey/BottleneckAudit';
+import NotFound from '@/pages/NotFound';
+
+const App = () => (
+  <Routes>
+    <Route path="/" element={<BottleneckAudit />} />
+    <Route path="*" element={<NotFound />} />
+  </Routes>
+=======
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import { TooltipProvider } from '@/components/ui/tooltip'
@@ -23,6 +34,7 @@ const App = () => (
       </TooltipProvider>
     </QueryClientProvider>
   </BrowserRouter>
+>>>>>>> 7aa6324 (Removing Sommer)
 );
 
 export default App;
